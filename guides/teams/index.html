@@ -53,11 +53,13 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#role-management">Role Management</a>
+    <li class="toctree-l3"><a class="reference internal" href="#inviting-a-player">Inviting a Player</a>
     </li>
-        </ul>
+    <li class="toctree-l3"><a class="reference internal" href="#removing-a-player">Removing a Player</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#role-permissions">Role Permissions</a>
     </li>
         </ul>
     </li>
@@ -99,11 +101,22 @@
 <li><code>team create &lt;name&gt;</code> - Create a new team.</li>
 <li><code>team join &lt;name&gt;</code> - Joins an existing team.*</li>
 </ul>
-<p>* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Member_Management">invited</a> to the team.</p>
+<p>* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Inviting_a_Player">invited</a> to the team.</p>
 <h2 id="member-management">Member Management</h2>
 <p>When you create or join a team, you will be given a Team Role. Team Roles are used to restrict what Team Members can do on behalf of the Team.</p>
+<h3 id="inviting-a-player">Inviting a Player</h3>
+<p>In order to expand a team, a team member, with the associated permissions, must invite other players. The invitations are time-sensitive and must be accepted within <strong>60 seconds</strong> of the invite being sent. Teams can revoke previously sent invitations if they change their mind.</p>
+<ul>
+<li><code>team invite &lt;player&gt;</code> - Invite a player to the team.</li>
+<li><code>team revokeinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
+</ul>
+<h3 id="removing-a-player">Removing a Player</h3>
+<p>In order to remove a team member, a team member, with the associated permissions, can kick a player. This will remove the player from the team and make them "Teamless".</p>
+<ul>
+<li><code>team kick &lt;player&gt;</code> - Kicks a player from the team.</li>
+</ul>
 <h3 id="team-roles">Team Roles</h3>
-<p>When a player is in a team, they can be assigned <strong>1 Team Role</strong>. There are <strong>6 Team Roles</strong> which are available for the team member. Some of the roles are given automatically whereas other roles must be given by existing players within a team through <a href="http://docs.ventoxmc.com/guides/teams#Team_Roles##Role_Management">Role Management</a></p>
+<p>When a player is in a team, they can be assigned <strong>1 Team Role</strong>. There are <strong>6 Team Roles</strong> which are available for the team member. Some of the roles are given automatically whereas other roles must be given by existing players within a team through the promotion or demotion of team members.</p>
 <ul>
 <li><code>Recruit</code> - This role is given when players join an existing team.</li>
 <li><code>Member</code></li>
@@ -112,7 +125,12 @@
 <li><code>Co-Leader</code></li>
 <li><code>Leader</code> - This role is given to players who create a team.</li>
 </ul>
-<h4 id="role-management">Role Management</h4>
+<p>Players in the Team, with the associated permissions, can promote or demote players between the various different roles.</p>
+<ul>
+<li><code>team promote &lt;player&gt;</code> - Promotes a player to the next role.</li>
+<li><code>team demote &lt;player&gt;</code> - Demotes a player to the next role.</li>
+</ul>
+<h3 id="role-permissions">Role Permissions</h3>
 <p>Team members </p>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
