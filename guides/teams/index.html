@@ -51,7 +51,15 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#create-or-join-a-team">Create or Join a Team</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#role-management">Role Management</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
     </li>
     </ul>
                   </li>
@@ -89,17 +97,23 @@
 <p>Any player on Ventox can create a new Team or join an existing Team.</p>
 <ul>
 <li><code>team create &lt;name&gt;</code> - Create a new team.</li>
-<li>
-<p><code>team join &lt;name&gt;</code> - Joins an existing team.*
-* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Member_Management">invited</a></p>
-</li>
-<li>
-<p><code>mkdocs serve</code> - Start the live-reloading docs server.</p>
-</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><code>team join &lt;name&gt;</code> - Joins an existing team.*</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
+<p>* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Member_Management">invited</a> to the team.</p>
+<h2 id="member-management">Member Management</h2>
+<p>When you create or join a team, you will be given a Team Role. Team Roles are used to restrict what Team Members can do on behalf of the Team.</p>
+<h3 id="team-roles">Team Roles</h3>
+<p>When a player is in a team, they can be assigned <strong>1 Team Role</strong>. There are <strong>6 Team Roles</strong> which are available for the team member. Some of the roles are given automatically whereas other roles must be given by existing players within a team through <a href="http://docs.ventoxmc.com/guides/teams#Team_Roles##Role_Management">Role Management</a></p>
+<ul>
+<li><code>Recruit</code> - This role is given when players join an existing team.</li>
+<li><code>Member</code></li>
+<li><code>Trusted</code></li>
+<li><code>Officer</code></li>
+<li><code>Co-Leader</code></li>
+<li><code>Leader</code> - This role is given to players who create a team.</li>
+</ul>
+<h4 id="role-management">Role Management</h4>
+<p>Team members </p>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
