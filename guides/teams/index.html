@@ -51,19 +51,25 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#create-or-join-a-team">Create or Join a Team</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
+    <li class="toctree-l2"><a class="reference internal" href="#expanding-your-team">Expanding your Team</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#inviting-a-player">Inviting a Player</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#inviting-an-alternate-player">Inviting an Alternate Player</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#kicking-a-player">Kicking a Player</a>
+        </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kicking-or-removing-team-members">Kicking or Removing Team Members</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
+        <ul>
     <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#role-permissions">Role Permissions</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#team-activity">Team Activity</a>
     </li>
         </ul>
     </li>
@@ -106,7 +112,8 @@
 <li><code>team join &lt;name&gt;</code> - Joins an existing team.*</li>
 </ul>
 <p>* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Inviting_a_Player">invited</a> to the team.</p>
-<h2 id="member-management">Member Management</h2>
+<h2 id="expanding-your-team">Expanding your Team</h2>
+<p>Players can expand their teams by inviting more players and alternate players to join their team. The invited players must accept the invitation as explained <a href="http://docs.ventoxmc.com/guides/teams#Create_or_Join_a_Team">here</a>.</p>
 <h3 id="inviting-a-player">Inviting a Player</h3>
 <p>In order to expand a team, a team member, with the associated permissions, must invite other players. The invitations are time-sensitive and must be accepted within <strong>60 seconds</strong> of the invite being sent. Teams can revoke previously sent invitations if they change their mind.</p>
 <ul>
@@ -119,11 +126,13 @@
 <li><code>team altinvite &lt;player&gt;</code> - Invite a player to the team.</li>
 <li><code>team revokealtinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
 </ul>
-<h3 id="kicking-a-player">Kicking a Player</h3>
+<p>Alternate accounts must follow a set of Team-specific rules. These server rules can be found <a href="http://docs.ventoxmc.com/rules#Team_Rules">here</a>.</p>
+<h2 id="kicking-or-removing-team-members">Kicking or Removing Team Members</h2>
 <p>In order to remove a team member, a team member, with the associated permissions, can kick a player. This will remove the player from the team and make them "Teamless".</p>
 <ul>
 <li><code>team kick &lt;player&gt;</code> - Kicks a player from the team.</li>
 </ul>
+<h2 id="member-management">Member Management</h2>
 <h3 id="team-roles">Team Roles</h3>
 <p>When a player is in a team, they can be assigned <strong>1 Team Role</strong>. There are <strong>6 Team Roles</strong> which are available for the team member. Some of the roles are given automatically whereas other roles must be given by existing players within a team through the promotion or demotion of team members.</p>
 <ul>
@@ -140,12 +149,7 @@
 <li><code>team demote &lt;player&gt;</code> - Demotes a player to the next role.</li>
 </ul>
 <h4 id="role-permissions">Role Permissions</h4>
-<p>Team members </p>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h3 id="team-activity">Team Activity</h3>
               
             </div>
           </div><footer>
