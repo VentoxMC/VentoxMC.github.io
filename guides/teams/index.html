@@ -55,11 +55,15 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#inviting-a-player">Inviting a Player</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inviting-an-alternate-player">Inviting an Alternate Player</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#kicking-a-player">Kicking a Player</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#role-permissions">Role Permissions</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#role-permissions">Role Permissions</a>
+        </ul>
     </li>
         </ul>
     </li>
@@ -94,7 +98,7 @@
 <p>On Ventox, Teams are used to register bases, record value and act as a group management system between players. In the guide below, each element of the Team System will be explored.</p>
 <h2 id="what-is-a-team">What is a Team?</h2>
 <p>A Team is a collection of people who work together to achieve a goal. On Ventox, players can join or create a team to group together and collectively work to become the Richest Team on Ventox, which is the primarily goal each <a href="http://docs.ventoxmc.com/guides/map#Seasons">season</a>.</p>
-<p>Each Team can have a maximum of <strong>4 players</strong> and <strong>2 alternate player accounts</strong>.</p>
+<p>Each Team can have a maximum of <strong>4 players</strong> and <strong>2 <a href="http://docs.ventoxmc.com/guides/teams#Inviting_an_Alternate_Player">alternate player accounts</a></strong>.</p>
 <h2 id="create-or-join-a-team">Create or Join a Team</h2>
 <p>Any player on Ventox can create a new Team or join an existing Team.</p>
 <ul>
@@ -108,6 +112,12 @@
 <ul>
 <li><code>team invite &lt;player&gt;</code> - Invite a player to the team.</li>
 <li><code>team revokeinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
+</ul>
+<h3 id="inviting-an-alternate-player">Inviting an Alternate Player</h3>
+<p>In order to progress faster in the game, as a team, some teams desire alternate accounts to use for non-gameplay functions such as AFKing spawners or farms. With the associated permissions, a team member can invite another player as an alternate account. The invitations are time-sensitive and must be accepted within <strong>60 seconds</strong> of the invite being sent. Teams can revoke previously sent invitations if they change their mind.</p>
+<ul>
+<li><code>team altinvite &lt;player&gt;</code> - Invite a player to the team.</li>
+<li><code>team revokealtinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
 </ul>
 <h3 id="kicking-a-player">Kicking a Player</h3>
 <p>In order to remove a team member, a team member, with the associated permissions, can kick a player. This will remove the player from the team and make them "Teamless".</p>
@@ -129,7 +139,7 @@
 <li><code>team promote &lt;player&gt;</code> - Promotes a player to the next role.</li>
 <li><code>team demote &lt;player&gt;</code> - Demotes a player to the next role.</li>
 </ul>
-<h3 id="role-permissions">Role Permissions</h3>
+<h4 id="role-permissions">Role Permissions</h4>
 <p>Team members </p>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
