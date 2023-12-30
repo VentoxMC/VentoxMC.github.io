@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.ventoxmc.com/help/mechanics/</loc>
+         <lastmod>2023-12-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.ventoxmc.com/help/teamcores/</loc>
          <lastmod>2023-12-30</lastmod>
          <changefreq>daily</changefreq>
