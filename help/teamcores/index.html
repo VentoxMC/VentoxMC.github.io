@@ -88,6 +88,8 @@
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#core-load">Core Load</a>
     </li>
+    <li class="toctree-l4"><a class="reference internal" href="#entry-alerts">Entry Alerts</a>
+    </li>
         </ul>
     </li>
         </ul>
@@ -103,6 +105,8 @@
         </ul>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#raiding-a-team-core">Raiding a Team Core</a>
     </li>
     </ul>
                   </li>
@@ -205,17 +209,22 @@
 <p>For <a href="http://docs.ventoxmc.com/help/teamcores#unclaimed-cores">Unclaimed Bases</a> the blocks must be placed between Y-level -64 and Y-level 64.
 For <a href="http://docs.ventoxmc.com/help/teamcores#claimed-cores">Claimed Bases</a>, the blocks must be placed between Y-level 0 and Y-level 64.</p>
 <h4 id="auto-deposit">Auto Deposit</h4>
-<p>Another primary function of the Team Core is to automatically detect Hopper Input into the Team Core, extracting <strong>Ores, Mob Drops and Crops</strong> and converting them into <a href="http://docs.ventoxmc.com/help/teamtop#deposited-items">Raidable Value</a>. For this to work, a team must unlock the <a href="http://docs.ventoxmc.com/help/teamcores#core-upgrades">Auto Deposit Core Upgrade</a>. This Team Wealth can be used for <a href="http://docs.ventoxmc.com/help/teamtop">Team Top</a>. </p>
+<p>Another function of the Team Core is to automatically detect Hopper Input into the Team Core, extracting <strong>Ores, Mob Drops and Crops</strong> and converting them into <a href="http://docs.ventoxmc.com/help/teamtop#deposited-items">Raidable Value</a>. For this to work, a team must unlock the <a href="http://docs.ventoxmc.com/help/teamcores#core-upgrades">Auto Deposit Core Upgrade</a>. This Team Wealth can be used for <a href="http://docs.ventoxmc.com/help/teamtop">Team Top</a>. </p>
 <p>This is very similar to the <a href="http://docs.ventoxmc.com/help/teamcores#deposit-wealth">manual Deposit Wealth function</a>.</p>
 <h4 id="core-load">Core Load</h4>
-<p>A third primary function of the Team Core, with the appropriate <a href="http://docs.ventoxmc.com/help/teamcores#core-upgrades">Core Upgrade</a>, is to automatically load a chunk. This should keep any <a href="http://docs.ventoxmc.com/help/teamtop">Machines</a> or <a href="http://docs.ventoxmc.com/help/teamtop">Spawners</a> functioning despite limited or no player activity in the area.</p>
+<p>A third function of the Team Core, with the appropriate <a href="http://docs.ventoxmc.com/help/teamcores#core-upgrades">Core Upgrade</a>, is to automatically load a chunk. This should keep any <a href="http://docs.ventoxmc.com/help/teamtop">Machines</a> or <a href="http://docs.ventoxmc.com/help/teamtop">Spawners</a> functioning despite limited or no player activity in the area.</p>
+<h4 id="entry-alerts">Entry Alerts</h4>
+<p>A fourth function of the Team Core, with the appropriate <a href="http://docs.ventoxmc.com/help/teamcores#core-upgrades">Core Upgrade</a>, is to automatically detect when players pass through your team's territory. These entry alerts are logged for each team and can be asscessed with a command.</p>
+<ul>
+<li><code>/team alerts</code> - Access to view past entry alerts.</li>
+</ul>
 <h2 id="core-claims">Core Claims</h2>
 <p>With a Team Core, teams can decide if they wish for their territory to be <strong>Claimed</strong> or <strong>Unclaimed</strong>. By default, all Team Cores are <strong>Unclaimed</strong>.</p>
 <h3 id="unclaimed-cores">Unclaimed Cores</h3>
 <p>When a Team Core is unclaimed, it is <em>not protected</em>. This means that any player on the server can break blocks leading into your base, open doors and steal from your containers.</p>
 <p>While a Team Core is unclaimed, the Team Core will register placed blocks further down in the world, ranging between Y-level -64 to Y-level 64.</p>
 <h3 id="claimed-cores">Claimed Cores</h3>
-<p>When a Team Core is claimed, it is <em>protected</em> once a team has <a href="http://docs.ventoxmc.com/help/teams#-----------------">at least 1x Team Crystal</a>. This means that players on the server cannot break blocks leading into your base as well as they cannot open doors, trapdoors or fence gates. Players can open containers such as chests, so ensure that your entire base is blocked in without any open doorways leading into your claims.</p>
+<p>When a Team Core is claimed, it is <em>protected</em> once a team has <a href="http://docs.ventoxmc.com/help/teamcores#team-crystals">at least 1x Team Crystal</a> This means that players on the server cannot break blocks leading into your base as well as they cannot open doors, trapdoors or fence gates. Players can open containers such as chests, so ensure that your entire base is blocked in without any open doorways leading into your claims.</p>
 <p>While a Team Core is claimed, the Team Core will register placed blocks ranging between Y-level 0 to Y-level 64. <a href="http://docs.ventoxmc.com/help/teamtop">Machines</a> or <a href="http://docs.ventoxmc.com/help/teamtop">Spawners</a> will only function if they are placed within this "registration range".</p>
 <h4 id="team-crystals">Team Crystals</h4>
 <p>In order for a Team Core to actually be protected, teams must obtain <strong>Team Crystals</strong>. Team Crystals are a virtual team-based currency which team members can purchase to ensure their Team Core and Team Territory remains protected.</p>
@@ -225,7 +234,18 @@ For <a href="http://docs.ventoxmc.com/help/teamcores#claimed-cores">Claimed Base
 <ul>
 <li>Death: a crystal will be lost when a team member dies</li>
 <li>Inactivity: all crystals will be lost if <em>no team member</em> logs online for 72 hours</li>
-<li>Non-competitive: all crystals will be lost if <em>no <a href="http://docs.ventoxmc.com/help/teamtop">Team Value</a></em> is gained in 72 hours</li>
+<li>Non-Competitive: all crystals will be lost if <em>no <a href="http://docs.ventoxmc.com/help/teamtop">Team Value</a></em> is gained in 72 hours</li>
+<li>Core Descrution: all crystals will be lost when the Team Core is destroyed</li>
+</ul>
+<h2 id="raiding-a-team-core">Raiding a Team Core</h2>
+<p>In order to raid a Team Core, players must use an <a href="http://docs.ventoxmc.com/help/teams#-----------------">Item Wrench</a> to break a Team Core. The team must be <em>not protected</em> in order for the core to be destroyed.</p>
+<p>Once a Team Core is destroyed,</p>
+<ul>
+<li>A global broadcast is sent out</li>
+<li>The Team will lose 0% of <a href="http://docs.ventoxmc.com/help/teamcores#team-interest">Accumuluated Interest</a></li>
+<li>The Team will lose 10% of Deposited Wealth from the <a href="http://docs.ventoxmc.com/help/teamtop#wealth-chest">Wealth Chest</a></li>
+<li>The Team will lose 25% of <a href="http://docs.ventoxmc.com/help/teamtop#wealth-shards">Wealth Shard Value</a></li>
+<li>The Team will lose 100% of <a href="http://docs.ventoxmc.com/help/teamcores#deposited-wealth">Deposited Items</a> in the Team Core</li>
 </ul>
               
             </div>
