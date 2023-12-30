@@ -50,6 +50,12 @@
     <li class="toctree-l2"><a class="reference internal" href="#what-is-a-team">What is a Team?</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#create-or-join-a-team">Create or Join a Team</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-team">Creating a Team</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#joining-a-team">Joining a Team</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#expanding-your-team">Expanding your Team</a>
         <ul>
@@ -60,6 +66,8 @@
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#removing-team-members">Removing Team Members</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#disbanding-your-team">Disbanding your Team</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
         <ul>
@@ -72,6 +80,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#team-activity">Team Activity</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#team-cores-bases">Team Cores &amp; Bases</a>
     </li>
     </ul>
                   </li>
@@ -106,12 +116,24 @@
 <p>A Team is a collection of people who work together to achieve a goal. On Ventox, players can join or create a team to group together and collectively work to become the Richest Team on Ventox, which is the primarily goal each <a href="http://docs.ventoxmc.com/guides/map#Seasons">season</a>.</p>
 <p>Each Team can have a maximum of <strong>4 players</strong> and <strong>2 <a href="http://docs.ventoxmc.com/guides/teams#Inviting_an_Alternate_Player">alternate player accounts</a></strong>.</p>
 <h2 id="create-or-join-a-team">Create or Join a Team</h2>
-<p>Any player on Ventox can create a new Team or join an existing Team.</p>
+<h3 id="creating-a-team">Creating a Team</h3>
+<p>Any player on Ventox can create a new team. The action of creating a new team is entirely free and available to everyone.</p>
 <ul>
 <li><code>/team create &lt;name&gt;</code> - Create a new team.</li>
+</ul>
+<h3 id="joining-a-team">Joining a Team</h3>
+<p>Any player on Ventox, when invited, can join an existing team. The action of joining a team is entirely free and available to everyone. Before a player can join a team, they must leave their existing team, if applicable. The player must also be <a href="http://docs.ventoxmc.com/guides/teams#Inviting_a_Player">invited</a> to the team.</p>
+<ul>
 <li><code>/team join &lt;name&gt;</code> - Joins an existing team.*</li>
 </ul>
-<p>* In order to join an existing team, you must be <a href="http://docs.ventoxmc.com/guides/teams#Inviting_a_Player">invited</a> to the team.</p>
+<p>Once a player has been invited into a team, they have the ability to deny the invitation. This will inform the inviting team the the player does not wish to join them.</p>
+<ul>
+<li><code>/team deny &lt;name&gt;</code> - Denies an invitation to join an existing team.*</li>
+</ul>
+<p>Players can check any pending invitations.</p>
+<ul>
+<li><code>/team invites</code> - Displays a list of all the pending team invitations.*</li>
+</ul>
 <h2 id="expanding-your-team">Expanding your Team</h2>
 <p>Players can expand their teams by inviting more players and alternate players to join their team. The invited players must accept the invitation as explained <a href="http://docs.ventoxmc.com/guides/teams#Create_or_Join_a_Team">here</a>.</p>
 <h3 id="inviting-a-player">Inviting a Player</h3>
@@ -124,7 +146,7 @@
 <p>In order to progress faster in the game, as a team, some teams desire alternate accounts to use for non-gameplay functions such as AFKing spawners or farms. With the associated permissions, a team member can invite another player as an alternate account. The invitations are time-sensitive and must be accepted within <strong>60 seconds</strong> of the invite being sent. Teams can revoke previously sent invitations if they change their mind.</p>
 <ul>
 <li><code>/team altinvite &lt;player&gt;</code> - Invite a player to the team.</li>
-<li><code>/team revokealtinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
+<li><code>/team altrevokeinvite &lt;player&gt;</code> - Revokes a player's invite to join the team.</li>
 </ul>
 <p>Alternate accounts must follow a set of Team-specific rules. These server rules can be found <a href="http://docs.ventoxmc.com/rules#Team_Rules">here</a>.</p>
 <h2 id="removing-team-members">Removing Team Members</h2>
@@ -132,11 +154,16 @@
 <ul>
 <li><code>/team kick &lt;player&gt;</code> - Kicks a player from the team.</li>
 </ul>
+<h2 id="disbanding-your-team">Disbanding your Team</h2>
+<p>As the leader of a team, you have the ability to disband your team. In doing so, all the team members will be kicked and made "Teamless", the Team's <a href="http://docs.ventoxmc.com/guides/teams#Team_Cores_&amp;_Bases">base core</a> will be destroyed and all team-related elements will be lost. This action cannot be undone.</p>
+<ul>
+<li><code>/team disband</code> - Disbands a team.</li>
+</ul>
 <h2 id="member-management">Member Management</h2>
 <h3 id="team-roles">Team Roles</h3>
 <p>When a player is in a team, they can be assigned <strong>1 Team Role</strong>. There are <strong>6 Team Roles</strong> which are available for the team member. Some of the roles are given automatically whereas other roles must be given by existing players within a team through the promotion or demotion of team members.</p>
 <ul>
-<li><code>Alt</code> - This role is given to alterante players when they join a team. This role cannot be obtained any other way.</li>
+<li><code>Alt</code> - This role is given when alternate players join an existing team.</li>
 <li><code>Recruit</code> - This role is given when players join an existing team.</li>
 <li><code>Member</code></li>
 <li><code>Trusted</code></li>
@@ -151,6 +178,7 @@
 </ul>
 <h4 id="role-permissions">Role Permissions</h4>
 <h3 id="team-activity">Team Activity</h3>
+<h2 id="team-cores-bases">Team Cores &amp; Bases</h2>
               
             </div>
           </div><footer>
