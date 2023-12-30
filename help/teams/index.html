@@ -71,10 +71,18 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#transfering-leadership-of-your-team">Transfering Leadership of your Team</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#removing-team-members">Removing Team Members</a>
+    <li class="toctree-l2"><a class="reference internal" href="#team-settings">Team Settings</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#renaming-your-team">Renaming your Team</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#changing-your-team-description">Changing your Team Description</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#member-management">Member Management</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#removing-team-members">Removing Team Members</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#team-roles">Team Roles</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#role-permissions">Role Permissions</a>
@@ -85,17 +93,15 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#team-settings">Team Settings</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#renaming-your-team">Renaming your Team</a>
+    <li class="toctree-l2"><a class="reference internal" href="#relation-management">Relation Management</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#changing-your-team-description">Changing your Team Description</a>
-    </li>
-        </ul>
+    <li class="toctree-l2"><a class="reference internal" href="#viewing-team-information">Viewing Team Information</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#team-cores-bases">Team Cores &amp; Bases</a>
     </li>
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../teamtop/">Team Top</a>
                   </li>
               </ul>
       </div>
@@ -177,8 +183,20 @@
 <ul>
 <li><code>/team leader &lt;player&gt;</code> - Transfers the leadership of a team to a new player.</li>
 </ul>
+<h2 id="team-settings">Team Settings</h2>
+<p>With teams, there are a variety of settings that can be changed to further control and customize how a team operates. These settings can be changed by a leader or any member with the applicable <a href="http://docs.ventoxmc.com/help/teams#Role_Permissions">permissions</a>.</p>
+<h3 id="renaming-your-team">Renaming your Team</h3>
+<p>Teams can rename their team. In doing so, all references to your team will change to reflect the new name. The new name must be appropriate.</p>
+<ul>
+<li><code>/team rename &lt;new name&gt;</code> - Renames a team to a new name.</li>
+</ul>
+<h3 id="changing-your-team-description">Changing your Team Description</h3>
+<p>Each team has a description. This description is purely cosmetic and can be used to provide a link to a Team Discord, provide a funny quote or a simple comment to further customize the team. The description must be appropriate.</p>
+<ul>
+<li><code>/team description &lt;new description&gt;</code> - Changes a team's description.</li>
+</ul>
 <h2 id="member-management">Member Management</h2>
-<h2 id="removing-team-members">Removing Team Members</h2>
+<h3 id="removing-team-members">Removing Team Members</h3>
 <p>In order to remove a team member, a team member, with the associated permissions, can kick a player. This will remove the player from the team and make them "Teamless".</p>
 <ul>
 <li><code>/team kick &lt;player&gt;</code> - Kicks a player from the team.</li>
@@ -234,7 +252,7 @@
 <li>Access to Use a <a href="http://docs.ventoxmc.com/help/teams#-----------------">Transport Wrench</a></li>
 <li>Access to Modify Team Claim Status</li>
 </ul>
-<p><strong>Claim Permissions</strong> - These permissions control claim actions.</p>
+<p><strong>Claim Permissions</strong> - These permissions control <a href="http://docs.ventoxmc.com/help/teams#-----------------">Team Claim</a> actions.</p>
 <ul>
 <li>Access to Place Blocks in Team Territory</li>
 <li>Access to Break Blocks in Team Territory</li>
@@ -252,68 +270,18 @@
 <ul>
 <li><code>/team activity</code> - Access to view past actions from team members.</li>
 </ul>
-<p><strong>Logged Actions</strong> - These actions are logged in the Team Activity system.</p>
+<h2 id="relation-management">Relation Management</h2>
+<p>Teams can have relations to better categorize the relationships that exist between teams on the server. There are three types of relations.</p>
 <ul>
-<li>Team Creation</li>
+<li><code>/team enemy &lt;team&gt;</code> - These are rival teams. Teams are listed as enemies by default.</li>
+<li><code>/team neutral &lt;team&gt;</code> - These are teams which share mutual interests. They have no functional game impacts.</li>
+<li><code>/team truce &lt;team&gt;</code> - These are alliance teams. Players in either team cannot fight each other.*</li>
 </ul>
-<p><em>Member Management</em></p>
+<p>* Currently, teams are unable to have Alliance Teams.</p>
+<h2 id="viewing-team-information">Viewing Team Information</h2>
+<p>With each team, Ventox stores lots of information about the state and status of the team and it's players. This information can include the <a href="http://docs.ventoxmc.com/help/teamtop#What_is_Team_Value?">Team's Value</a>, Membership Information and Claim Information.</p>
 <ul>
-<li>Member Invited/Revoked Invite</li>
-<li>Alternate Member Invited/Revoked Invite</li>
-<li>Member Joined</li>
-<li>Member Left/Kicked</li>
-<li>Member Role Changed</li>
-<li>Role Permission Changed</li>
-<li>Leader Transfered</li>
-</ul>
-<p><em>Relation Management</em></p>
-<ul>
-<li>Team Enemy</li>
-<li>Team Neutral</li>
-<li>Team Truce</li>
-</ul>
-<p><em>Team Settings</em></p>
-<ul>
-<li>Team Rename</li>
-<li>Changed Team Description</li>
-</ul>
-<p><em>Team Core &amp; Bases</em></p>
-<ul>
-<li>Core Placed</li>
-<li>Core Destroyed</li>
-<li>Wealth Deposited</li>
-<li>Wealth Shard Deposited</li>
-<li>Core Upgrade Purchased</li>
-<li>Core Effect Purchased</li>
-<li>Core Effect Activated/Deactivated</li>
-<li>Claimed Enabled/Disabled</li>
-<li>Transport Wrench Used</li>
-<li>Summit Perk Purchased</li>
-<li>Interest Gained</li>
-<li>Team Crystal Purchased</li>
-<li>Team Crystal Lost</li>
-</ul>
-<p><em>Wealth Chest</em></p>
-<ul>
-<li>Wealth Chest Deposited</li>
-</ul>
-<p><em>Team Quests</em></p>
-<ul>
-<li>Team Quest Task Complete</li>
-<li>Team Quest Complete</li>
-<li>Team Quest Rewards Claimed</li>
-</ul>
-<h2 id="team-settings">Team Settings</h2>
-<p>With teams, there are a variety of settings that can be changed to further control and customize how a team operates. These settings can be changed by a leader or any member with the applicable <a href="http://docs.ventoxmc.com/help/teams#Role_Permissions">permissions</a>.</p>
-<h3 id="renaming-your-team">Renaming your Team</h3>
-<p>Teams can rename their team. In doing so, all references to your team will change to reflect the new name. The new name must be appropriate.</p>
-<ul>
-<li><code>/team rename &lt;new name&gt;</code> - Renames a team to a new name.</li>
-</ul>
-<h3 id="changing-your-team-description">Changing your Team Description</h3>
-<p>Each team has a description. This description is purely cosmetic and can be used to provide a link to a Team Discord, provide a funny quote or a simple comment to further customize the team. The description must be appropriate.</p>
-<ul>
-<li><code>/team description &lt;new description&gt;</code> - Changes a team's description.</li>
+<li><code>/team show &lt;team&gt;</code> - Displays the publicly available information for a given team.</li>
 </ul>
 <h2 id="team-cores-bases">Team Cores &amp; Bases</h2>
               
@@ -321,6 +289,7 @@
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../teamtop/" class="btn btn-neutral float-right" title="Team Top">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -345,6 +314,8 @@
     
       <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../teamtop/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
