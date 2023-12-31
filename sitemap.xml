@@ -2,47 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.ventoxmc.com/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/faq/events/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/faq/gameplay/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/faq/map/</loc>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/faq/teams/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/help/economy/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/help/events/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/help/items/</loc>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/help/map/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/help/mechanics/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/help/quests/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/help/skills/</loc>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/help/teamcores/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/help/teams/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/help/teamtop/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/howtoplay/firstday/</loc>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/rules/rules/</loc>
-         <lastmod>2023-12-30</lastmod>
+         <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
