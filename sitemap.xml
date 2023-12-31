@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.ventoxmc.com/rules/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.ventoxmc.com/socials/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.ventoxmc.com/faq/events/</loc>
          <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
@@ -77,11 +87,6 @@
     </url>
     <url>
          <loc>https://docs.ventoxmc.com/howtoplay/firstday/</loc>
-         <lastmod>2023-12-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.ventoxmc.com/rules/rules/</loc>
          <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
