@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.ventoxmc.com/help/machines/</loc>
+         <lastmod>2023-12-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.ventoxmc.com/help/map/</loc>
          <lastmod>2023-12-31</lastmod>
          <changefreq>daily</changefreq>
